@@ -47,16 +47,6 @@ namespace Prog2_Interfaces_BenjaminMackey
             }
         }
 
-        /*
-        static void MoveEnemies()
-        {
-            foreach (Enemy moveRef in _chars.Where(a => a is Enemy))
-            {
-                Console.WriteLine("e");
-                moveRef._moveStrategy.Move(moveRef._position, _chars.OfType<Player>().ToArray()[0]._position);
-            }
-        }
-        */
         static void Draw()
         {
             Console.Clear();
@@ -79,7 +69,6 @@ namespace Prog2_Interfaces_BenjaminMackey
             while (true) 
             {
                 SendInput();
-                //MoveEnemies();
                 Draw();
             }
         }
